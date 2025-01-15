@@ -46,42 +46,61 @@ namespace Demo
             #endregion
 
             #region Video 2
+            //List<int> Numbers = new List<int>();
+            //Console.WriteLine($"Count ==> {Numbers.Count}");
+            //Console.WriteLine($"Capacity ==> {Numbers.Capacity}");
+            //Console.WriteLine();
+            //Numbers.Add(1);
+            //Console.WriteLine($"Count ==> {Numbers.Count}");
+            //Console.WriteLine($"Capacity ==> {Numbers.Capacity}");
+            //Console.WriteLine();
+            //Numbers.AddRange(new int[] { 2, 3, 4 });
+            //Console.WriteLine($"Count ==> {Numbers.Count}");
+            //Console.WriteLine($"Capacity ==> {Numbers.Capacity}");
+            //Console.WriteLine();
+            //Numbers.Add(5);
+            //Console.WriteLine($"Count ==> {Numbers.Count}");
+            //Console.WriteLine($"Capacity ==> {Numbers.Capacity}");
+            //Console.WriteLine(); 
+            //Numbers.TrimExcess();
+            //Console.WriteLine($"Count ==> {Numbers.Count}");
+            //Console.WriteLine($"Capacity ==> {Numbers.Capacity}");
+            //Console.WriteLine();
+            //List<int> Numbers2 = new List<int>(5) { 1,2,3,4,5};
+            //Console.WriteLine($"Count ==> {Numbers2.Count}");
+            //Console.WriteLine($"Capacity ==> {Numbers2.Capacity}");
+            //Console.WriteLine();
+            //Numbers2.Add(6);
+            //Console.WriteLine($"Count ==> {Numbers2.Count}");
+            //Console.WriteLine($"Capacity ==> {Numbers2.Capacity}");
+            //Console.WriteLine();
+            //foreach(int Number in Numbers2)
+            //{
+            //    Console.WriteLine(Number);
+            //}
+            //Console.WriteLine();
+            //List<int> Numbers3 = new List<int>(5) {1,2,3,4,5};
+            ////Numbers3.Add("Mostafa");
+            //Console.WriteLine(Helper.SumList(Numbers3));
+            #endregion
+
+            #region Video 3
             List<int> Numbers = new List<int>();
-            Console.WriteLine($"Count ==> {Numbers.Count}");
-            Console.WriteLine($"Capacity ==> {Numbers.Capacity}");
-            Console.WriteLine();
             Numbers.Add(1);
-            Console.WriteLine($"Count ==> {Numbers.Count}");
-            Console.WriteLine($"Capacity ==> {Numbers.Capacity}");
-            Console.WriteLine();
-            Numbers.AddRange(new int[] { 2, 3, 4 });
-            Console.WriteLine($"Count ==> {Numbers.Count}");
-            Console.WriteLine($"Capacity ==> {Numbers.Capacity}");
-            Console.WriteLine();
-            Numbers.Add(5);
-            Console.WriteLine($"Count ==> {Numbers.Count}");
-            Console.WriteLine($"Capacity ==> {Numbers.Capacity}");
-            Console.WriteLine(); 
-            Numbers.TrimExcess();
-            Console.WriteLine($"Count ==> {Numbers.Count}");
-            Console.WriteLine($"Capacity ==> {Numbers.Capacity}");
-            Console.WriteLine();
-            List<int> Numbers2 = new List<int>(5) { 1,2,3,4,5};
-            Console.WriteLine($"Count ==> {Numbers2.Count}");
-            Console.WriteLine($"Capacity ==> {Numbers2.Capacity}");
-            Console.WriteLine();
-            Numbers2.Add(6);
-            Console.WriteLine($"Count ==> {Numbers2.Count}");
-            Console.WriteLine($"Capacity ==> {Numbers2.Capacity}");
-            Console.WriteLine();
-            foreach(int Number in Numbers2)
+            Numbers.AddRange(new int[] {2,3});
+            Numbers.Insert(3,4);
+            Numbers.InsertRange(4, new int[] {5,2 });
+            //Numbers.Clear();
+            foreach(int Number in Numbers)
             {
                 Console.WriteLine(Number);
             }
-            Console.WriteLine();
-            List<int> Numbers3 = new List<int>(5) {1,2,3,4,5};
-            //Numbers3.Add("Mostafa");
-            Console.WriteLine(Helper.SumList(Numbers3));
+            Console.WriteLine(Numbers.Contains(9));
+            Console.WriteLine(Numbers.Contains(5));
+            Console.WriteLine(Numbers.Capacity);
+            Console.WriteLine(Numbers.EnsureCapacity(9));
+            Console.WriteLine(Numbers.IndexOf(2));
+            Console.WriteLine(Numbers.LastIndexOf(2));
             #endregion
         }
     }
